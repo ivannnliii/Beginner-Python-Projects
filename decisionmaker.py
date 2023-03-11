@@ -12,7 +12,8 @@ while True:
 
 user_inputs = []
 for i in range(num_inputs):
-    user_input = (input(f"Enter value #{(i+1)}: "))
+    user_input = (input(f"Enter choice #{(i+1)}: "))
     user_inputs.append(user_input)
 
-print(f"The final decision is: {random.choice(user_inputs).format()}")
+final_decision = random.choice(user_inputs)
+print(f"{final_decision} has been randomly selected")
