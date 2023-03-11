@@ -2,6 +2,7 @@
 
 import random
 
+# Chooses the number of choices to randomly choose upon
 num_inputs = 0
 while True:
     try:
@@ -10,6 +11,7 @@ while True:
     except ValueError:
         print("Please type a number...")
 
+# Collects the input from user to choose upon
 user_inputs = []
 for i in range(num_inputs):
     user_input = (input(f"Enter choice #{(i+1)}: "))
